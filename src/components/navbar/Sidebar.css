@@ -1,0 +1,60 @@
+.orange-background {
+    background-color: orange;
+  }
+  
+  .sidebar-enter-active,
+  .sidebar-leave-active {
+    transition: transform 0.3s;
+  }
+  .nav-bg-1 {
+    background-color: #1d1d1b;
+  }
+  
+  .navLink > li {
+    font-size: 64px;
+    font-family: 'NeueHaasGrostekBold';
+  }
+  
+  .navLink > li:hover {
+    font-size: 68px;
+  }
+  .font-NeueHaasGrostekBold{
+    font-family: 'NeueHaasGrostekBold';
+  }
+  .sidebar-enter,
+  .sidebar-leave-to {
+    transform: translateX(100%);
+  }
+  
+  .sidebar-enter-to {
+    transform: translateX(0);
+  }
+  
+  .transform {
+    transform: translateX(0) !important;
+  }
+  
+  .fixed {
+    position: fixed;
+  }
+  
+  .w-64 {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  
+  @media (max-width: 767px) {
+    .transform {
+      transform: translateX(0) !important;
+    }
+  
+    .fixed {
+      position: fixed;
+    }
+  
+    .w-64 {
+      width: 100vw;
+      max-width: 100vw;
+    }
+  }
+  

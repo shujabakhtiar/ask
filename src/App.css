@@ -1,11 +1,75 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'NeueHaasGrostek';
+  src: url('./assets/fonts/NeueHaasGrotesk/NeueHaasDisplay-Black.ttf')  
+  /* src: url('../assets/fonts/NeueHaasGrostek.woff') format('woff'), */
+  /* src: url('../assets/fonts/NeueHaasGrostek.woff2') format('woff2'), */
+}
+@font-face {
+  font-family: 'NeueHaasGrostekLight';
+  src: url('./assets/fonts/NeueHaasGrotesk/NeueHaasDisplay-Light.ttf')  
+  /* src: url('../assets/fonts/NeueHaasGrostek.woff') format('woff'), */
+  /* src: url('../assets/fonts/NeueHaasGrostek.woff2') format('woff2'), */
+}
+@font-face {
+  font-family: 'NeueHaasGrostekBold';
+  src: url('./assets/fonts/NeueHaasGrotesk/NeueHaasDisplay-Bold.ttf')  
+  /* src: url('../assets/fonts/NeueHaasGrostek.woff') format('woff'), */
+  /* src: url('../assets/fonts/NeueHaasGrostek.woff2') format('woff2'), */
+}
+@font-face {
+  font-family: 'brFirma';
+  src: url('./assets/fonts/br-firma/BRFirma-Regular-BF65557b67059a7.otf')  
+  /* src: url('../assets/fonts/NeueHaasGrostek.woff') format('woff'), */
+  /* src: url('../assets/fonts/NeueHaasGrostek.woff2') format('woff2'), */
+}
 .App {
   text-align: center;
+  font-family: 'brFirma';
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.full-container{
+  width: 100vw;
+  height: 100vh;
+}
+.body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Media query for larger screens */
+  @media screen and (min-width: 768px) {
+    max-width: 720px; /* Adjust the maximum width for laptops */
+  }
+
+  /* Media query for extra-large screens */
+  @media screen and (min-width: 1024px) {
+    max-width: 960px; /* Adjust the maximum width for larger monitors */
+  }
+
+  /* Media query for very large screens */
+  @media screen and (min-width: 1280px) {
+    max-width: 1140px; /* Adjust the maximum width for very large monitors */
+  }
+
+  /* Media query for extremely large screens */
+  @media screen and (min-width: 1440px) {
+    max-width: 1320px; /* Adjust the maximum width for extremely large monitors */
+  }
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -36,3 +100,4 @@
     transform: rotate(360deg);
   }
 }
+
