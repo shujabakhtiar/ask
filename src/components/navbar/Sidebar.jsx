@@ -44,9 +44,9 @@ const Sidebar = ({ isOpen, onClose }) => {
           <div id="sidebar-bg" className="fixed inset-y-0 right-0 w-full nav-bg-1 overflow-y-auto transition-transform duration-300 ease-in-out transform flex justify-end">
             <div className="p-4">
               <ul className='navLink p-20'>
-                <li><a href="#" className="block text-white px-4 py-2 rounded hover:underline">Link 1</a></li>
-                <li><a href="#" className="block text-white px-4 py-2 rounded hover:underline">Link 2</a></li>
-                <li><a href="#" className="block text-white px-4 py-2 rounded hover:underline">Link 3</a></li>
+                <li><a href="/" className="block text-white px-4 py-2 rounded hover:underline">Link 1</a></li>
+                <li><a href="/" className="block text-white px-4 py-2 rounded hover:underline">Link 2</a></li>
+                <li><a href="/" className="block text-white px-4 py-2 rounded hover:underline">Link 3</a></li>
                 {/* Add more links here */}
               </ul>
             </div>

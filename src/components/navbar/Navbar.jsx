@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Sidebar from './Sidebar';
 import BurgerMenu from '../../assets/svg/BurgerMenu'
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -11,11 +12,11 @@ const Navbar = () => {
   };
 
   // Function to handle scroll event
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const currentScrollPos = window.pageYOffset;
     setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
     setPrevScrollPos(currentScrollPos);
-  };
+  }, [prevScrollPos]);
 
   // Effect hook to add scroll event listener
   useEffect(() => {
@@ -23,7 +24,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [prevScrollPos, visible]);
+  }, [handleScroll]);
 
   return (
     <>
