@@ -1,6 +1,9 @@
 .orange-background {
     background-color: orange;
   }
+  .z-29 {
+    z-index: 29;
+  }
   
   .sidebar-enter-active,
   .sidebar-leave-active {

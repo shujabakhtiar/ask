@@ -5,7 +5,7 @@ import BurgerMenu from '../../assets/svg/BurgerMenu'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`shadow-lg fixed top-0 w-full z-29 bg-white ${visible ? '' : 'hidden'}`}>
+      <nav className={`shadow-lg h-28 flex items-center fixed top-0 w-full z-29 bg-white ${visible ? '' : 'hidden'}`}>
         <div className="container mx-auto px-4 bg-white">
           <div className="flex justify-between h-16">
             {/* Logo */}

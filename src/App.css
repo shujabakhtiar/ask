@@ -35,9 +35,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-.full-container{
-  width: 100vw;
-  height: 100vh;
+.full-container{ 
+  position: relative;
+  height: 100vh; /* Make each section full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .body{
   min-width: 100vw;
@@ -87,7 +90,20 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.text-gray {
+  color:#9e9e9e
+}
+.quote{
+  max-width: 35vw;
+  text-align: left;
+  font-size: 30px;
+}
+.sticky-text {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 50%; /* Start sticking when 50% from the top */
+  transform: translateY(-50%); /* Center the text vertically */
+}
 .App-link {
   color: #61dafb;
 }
