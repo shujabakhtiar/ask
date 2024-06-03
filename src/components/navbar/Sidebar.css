@@ -9,9 +9,7 @@
   .sidebar-leave-active {
     transition: transform 0.3s;
   }
-  .nav-bg-1 {
-    background-color: #1d1d1b;
-  }
+
   
   .navLink > li {
     font-size: 64px;

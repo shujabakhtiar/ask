@@ -41,7 +41,7 @@ const Sidebar = ({ isOpen, onClose }) => {
       {isOpen && (
         <div className="fixed inset-0 overflow-hidden z-30">
           <div className="absolute inset-0 opacity-50" onClick={handleOverlayClick}></div>
-          <div id="sidebar-bg" className="fixed inset-y-0 right-0 w-full nav-bg-1 overflow-y-auto transition-transform duration-300 ease-in-out transform flex justify-end">
+          <div id="sidebar-bg" className="fixed inset-y-0 right-0 w-full bg-dark overflow-y-auto transition-transform duration-300 ease-in-out transform flex justify-end">
             <div className="p-4">
               <ul className='navLink p-20'>
                 <li><a href="/" className="block text-white px-4 py-2 rounded hover:underline">Link 1</a></li>

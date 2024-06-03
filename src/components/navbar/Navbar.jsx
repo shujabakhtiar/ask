@@ -28,8 +28,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`shadow-lg h-28 flex items-center fixed top-0 w-full z-29 bg-white ${visible ? '' : 'hidden'}`}>
-        <div className="container mx-auto px-4 bg-white">
+      <nav className={`shadow-lg flex items-center fixed top-0 w-full z-29 bg-white ${visible ? '' : 'hidden'}`}>
+        <div className="container mx-auto px-4 ">
           <div className="flex justify-between h-16">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center font-NeueHaasGrostekBold text-xl" style={{FontFace:"brFirma"}}>

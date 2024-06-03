@@ -79,7 +79,15 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.bg-dark{
+  background-color: #2d2d23;
+  color: white
+}
 
+.bg-semi-light{
+  background-color: #f2e0cf;
+
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -96,7 +104,6 @@
 .quote{
   max-width: 35vw;
   text-align: left;
-  font-size: 30px;
 }
 .sticky-text {
   position: -webkit-sticky; /* For Safari */
