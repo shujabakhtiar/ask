@@ -11,16 +11,16 @@ import fabricpanelImg from "../assets/images/MODELS/CREATIVE/fabric-panel-board.
 import recycledFramesImg from "../assets/images/MODELS/CREATIVE/Recycledframes.jpg"
 import textTileLamp from "../assets/images/MODELS/CREATIVE/TextileLampandTextilecoaster.jpg"
 
-import chairImg from "../assets/images/MODELS/FURNITURES/Textile waste chair 01.jpg"
-import chair2Img from "../assets/images/MODELS/FURNITURES/Textile waste chair 02.jpg"
-import coffeeTableImg from "../assets/images/MODELS/FURNITURES/textile waste coffee table.jpg"
-import stoolImg from "../assets/images/MODELS/FURNITURES/Textile waste stool.jpg"
+import chairImg from "../assets/images/MODELS/FURNITURES/Textilewastechair01.jpg"
+import chair2Img from "../assets/images/MODELS/FURNITURES/Textilewastechair02.jpg"
+import coffeeTableImg from "../assets/images/MODELS/FURNITURES/textilewastecoffeetable.jpg"
+import stoolImg from "../assets/images/MODELS/FURNITURES/Textilewastestool.jpg"
 import clothChair from "../assets/images/MODELS/FURNITURES/recycleTextileChair.jpg"
 
 import buildingSectionImg from "../assets/images/MODELS/New folder/BuildingSection.jpg"
-import partitionWallpanelImg from "../assets/images/MODELS/New folder/Partition wall panel .jpg"
-import partitionWall1panel1Img from "../assets/images/MODELS/New folder/Partition wall panel 01.jpg"
-import partitionWall2panel2Img from "../assets/images/MODELS/New folder/partition wall panel 02.jpg"
+import partitionWallpanelImg from "../assets/images/MODELS/New folder/Partitionwallpanel.jpg"
+import partitionWall1panel1Img from "../assets/images/MODELS/New folder/Partitionwallpanel01.jpg"
+import partitionWall2panel2Img from "../assets/images/MODELS/New folder/partitionwallpanel02.jpg"
 import videoDesktop from "../assets/modelsdesktop.mp4"
 import videoMobile from "../assets/modelsmobile.mp4"
 export const Models = () => {
