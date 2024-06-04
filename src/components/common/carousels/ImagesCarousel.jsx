@@ -48,7 +48,7 @@ export const ImagesCarousel = ({ imageList }) => {
     };
 
     return (
-        <div className="flex items-center">
+        <div className="card">
             <Carousel 
                 value={imageList} 
                 numVisible={3} 

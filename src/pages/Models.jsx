@@ -148,8 +148,7 @@ export const Models = () => {
         </div>
                 <div className='w-full'>
                     <div className='w-full text-left'>
-                   {/** <ImagesCarousel imageList={imageList} />*/} 
-                   <ModelImages />
+                   <ImagesCarousel imageList={imageList} />
 
                     </div>
                 </div>
@@ -201,7 +200,6 @@ export const Models = () => {
             imageList={collectionNetwork}
         />
 
-       (/**
        <Section
             title="Creative"
             text="The creative section showcases our innovative approach to repurposing textile waste into unique, functional, and aesthetically pleasing items. Through these creative projects, we demonstrate the potential of discarded textiles to be transformed into decor and utility pieces that not only add value to our living spaces but also promote sustainability and awareness about textile waste."
@@ -218,7 +216,6 @@ export const Models = () => {
             text="The Architectural Innovations section showcases how our research and material experiments extend beyond small-scale applications, demonstrating their potential in real-world architectural contexts. By integrating textile waste into building elements, we highlight the feasibility and aesthetic appeal of sustainable materials in construction and interior design.            "
             imageList={architectureInnovations}
         />
-        */) 
 
     </>
   )
