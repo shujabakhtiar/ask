@@ -32,7 +32,7 @@ export const ImagesCarousel = ({ imageList }) => {
 
     const projectTemplate = (project) => {
         return (
-            <div className='flex items-center' onClick={() => openDialog(project)}>
+            <div onClick={() => openDialog(project)}>
                 <WideImage image={project.image} name={project.image} />
             </div>
         );
@@ -61,7 +61,7 @@ export const ImagesCarousel = ({ imageList }) => {
             <CustomModal visible={visible} onHide={onHide} >
                 <div className='w-full flex flex-col'>
                     <div className='flex justify-center'>
-                         <img src={selectedImage.image} alt="Selected" className='w-full h-3/5 rounded-tl-lg rounded-tr-lg max-h-img'/>
+                         <img src={selectedImage.image} alt="Selected" className='w-full h-3/5 rounded-tl-lg rounded-tr-lg max-h-img object-scale-down home-img'/>
                      </div>
                     <div className='flex flex-col py-3 px-4'>
                         <p className='text-left text-xl font-bold'>

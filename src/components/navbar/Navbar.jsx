@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Sidebar from './Sidebar';
 import BurgerMenu from '../../assets/svg/BurgerMenu'
+import { Link  } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,9 +33,9 @@ const Navbar = () => {
         <div className="container mx-auto px-4 ">
           <div className="flex justify-between h-16">
             {/* Logo */}
-            <div className="flex-shrink-0 flex items-center font-NeueHaasGrostekBold text-xl" style={{FontFace:"brFirma"}}>
+            <Link to="/" className="flex-shrink-0 flex items-center font-NeueHaasGrostekBold text-xl" style={{FontFace:"brFirma"}}>
                 ASK
-            </div>
+            </Link>
             {/* Toggle Sidebar Button */}
             <button onClick={toggleSidebar} className="block p-4 focus:outline-none">
               <BurgerMenu/>

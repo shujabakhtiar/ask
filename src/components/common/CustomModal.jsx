@@ -53,7 +53,7 @@ const CustomModal = ({ visible, onHide, children }) => {
                     padding: '20px',
                     width: isMobile ? '100%' : 'auto', // Set width to 100% on mobile
                     maxWidth: isMobile ? '100%' : 'auto', // Set max width to 100% on mobile
-                }}>
+                }} className='object-fit'>
                     {children}
                 </div>
             </div>

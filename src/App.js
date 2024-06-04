@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className='App'>
         <Navbar/>
-        <div className='z-0'>
+        <div className='z-0 overflow-x-auto'>
         <Routes>
          <Route path="/" element={<Home/>}/>
          <Route path="/models" element={<Models/>} />

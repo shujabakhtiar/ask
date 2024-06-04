@@ -5,7 +5,7 @@ import { MaterialImages } from '../components/common/carousels/MaterialImages';
 import { Link } from 'react-router-dom';
 import useIntersectionObserver from '../assets/helper/useIntersectionObserver'; // Adjust the import path accordingly
 import video from "../assets/video.mp4"
-import videomobile from "../assets/videomobile.mp4"
+import videomobile from "../assets/homeMobile.mp4"
 import smallScaleImage from "../assets/images/home/smallScale.jpg"
 import mediumScaleImg from "../assets/images/MODELS/New folder/Building Section.jpg"
 import largeScaleImg from "../assets/images/MODELS/COLLECTION NETWORK/textile-metro-collection-network.jpg"
@@ -44,7 +44,7 @@ export const Home = () => {
 
             <div className="left-10 md:left-20 absolute h-20 text-4xl font-bold text-white text-left">
                 <span className='text-5xl text-left'>Reweave</span> <br />
-                <span className='text-2xl'>Transforming Textile Waste into Architectural Marvels</span>
+                <span className='text-2xl'>Transforming fibers to cities</span>
             </div>
         </div>
 

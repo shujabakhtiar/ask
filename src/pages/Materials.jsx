@@ -3,6 +3,9 @@ import {homePageTexts} from "../assets/consts/content"
 import { StatusCard } from '../components/common/cards/StatusCard'
 import MaterialImagesGrid from '../components/common/cards/MaterialGrid';
 import materialImages from "../assets/images/home/smallScale.jpg"
+import videoDesktop from "../assets/materialDesktop.mp4"
+import videoMobile from "../assets/materialMobile.mp4"
+
 export const Materials = () => {
   const [showDetails, setShowDetails] = useState(false);
 
@@ -17,18 +20,25 @@ const toggleDetails = () => {
 };
   return (
     <>
-         <div className="full-container flex justify-center items-center relative overflow-hidden">
-             <img src={materialImages} className='h-full md:w-full'/>
-             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div> {/* Semi-transparent black layer */}
-             <div className="left-10 md:left-20 absolute h-20 text-4xl font-bold text-white text-left">
-                <span className='text-5xl text-left'>Materials</span> <br />
-                <span className='text-2xl'>Exploring the variety</span>
-            </div>
-          </div>
-            <div className='flex justify-center items-center'>
+          <div className="full-container relative overflow-hidden">
+            <video className="hidden md:block w-full relative overflow-hidden opacity-70" autoPlay muted loop>
+                <source src={videoDesktop} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <video className="md:hidden  h-full w-full relative overflow-hidden opacity-70" autoPlay muted loop>
+                <source src={videoMobile} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div> {/* Semi-transparent black layer */}
+
+              <div className="left-10 md:left-20 absolute h-20 text-4xl font-bold text-white text-left">
+                  <span className='text-5xl text-left'>Materials</span> <br />
+              </div>
+             </div>
+            <div className='flex justify-center items-center mt-6'>
                 <div className='container md:h-5/6 flex flex-col md:flex md:flex-row md:justify-between'>
                     
-                        <StatusCard items={infoItems} />
+                        {/**<StatusCard items={infoItems} /> **/}
                     
                 <div className='flex flex-col justify-center w-full md:w-1/2'>
                     <div className='md:text-xl font-bold w-full text-justify'>
