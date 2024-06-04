@@ -17,7 +17,7 @@ import coffeeTableImg from "../assets/images/MODELS/FURNITURES/textile waste cof
 import stoolImg from "../assets/images/MODELS/FURNITURES/Textile waste stool.jpg"
 import clothChair from "../assets/images/MODELS/FURNITURES/recycleTextileChair.jpg"
 
-import buildingSectionImg from "../assets/images/MODELS/New folder/Building Section.jpg"
+import buildingSectionImg from "../assets/images/MODELS/New folder/BuildingSection.jpg"
 import partitionWallpanelImg from "../assets/images/MODELS/New folder/Partition wall panel .jpg"
 import partitionWall1panel1Img from "../assets/images/MODELS/New folder/Partition wall panel 01.jpg"
 import partitionWall2panel2Img from "../assets/images/MODELS/New folder/partition wall panel 02.jpg"

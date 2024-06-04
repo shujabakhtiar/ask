@@ -7,7 +7,7 @@ import useIntersectionObserver from '../assets/helper/useIntersectionObserver'; 
 import video from "../assets/video.mp4"
 import videomobile from "../assets/homeMobile.mp4"
 import smallScaleImage from "../assets/images/home/smallScale.jpg"
-import mediumScaleImg from "../assets/images/MODELS/New folder/Building Section.jpg"
+import mediumScaleImg from "../assets/images/MODELS/New folder/BuildingSection.jpg"
 import largeScaleImg from "../assets/images/MODELS/COLLECTION NETWORK/textile-metro-collection-network.jpg"
 export const Home = () => {
     const [modelsRef, modelsInView] = useIntersectionObserver({
