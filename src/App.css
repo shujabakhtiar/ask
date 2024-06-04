@@ -113,6 +113,9 @@
   transition: color 0.3s, border-color 0.3s, box-shadow 0.3s;
   outline: none; /* Remove default focus outline */
 }
+.p-carousel-item{
+  display: flex;
+}
 
 .hollow-button:hover,
 .hollow-button:focus {
@@ -125,7 +128,12 @@
   box-shadow: none; /* Remove shadow on click */
 }
 
-
+@media only screen and (max-width: 767px) {
+  .video-background {
+      width: 100%;
+      height: auto;
+  }
+}
 .quote{
   max-width: 35vw;
   text-align: left;

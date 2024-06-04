@@ -4,6 +4,11 @@ import { StatusCard } from '../components/common/cards/StatusCard';
 import { Link } from 'react-router-dom';
 import { ImagesCarousel } from '../components/common/carousels/ImagesCarousel';
 import img from "../assets/images/MODELS/COLLECTION NETWORK/metro-collection-1.jpg";
+import metroCollectionImg from "../assets/images/MODELS/COLLECTION NETWORK/metro-collection-1.jpg"
+import metroCollection2Img from "../assets/images/MODELS/COLLECTION NETWORK/metro-collection-2.jpg"
+import textTileMetroCollectionImg from "../assets/images/MODELS/COLLECTION NETWORK/textile-metro-collection-network.jpg"
+import textTileMetroNetworkImg from "../assets/images/MODELS/COLLECTION NETWORK/texttile-metro-network.jpg"
+import typicalTextileCollectionImg from "../assets/images/MODELS/COLLECTION NETWORK/typical-textile.jpg"
 
 export const Models = () => {
   const [showDetails, setShowDetails] = useState(false);
@@ -18,10 +23,31 @@ export const Models = () => {
     setShowDetails(prevShowDetails => !prevShowDetails);
   };
 
-  const images = [
-    { name: "Set A", image: img }, // Replace 'image_url_for_set_a' with the actual image URL
-    { name: "Set B", image: img }, // Replace 'image_url_for_set_b' with the actual image URL
-    { name: "Set C", image: img }  // Replace 'image_url_for_set_c' with the actual image URL
+  const collectionNetwork = [
+    { 
+      name: "Metro Collection", 
+      image: metroCollectionImg,
+      desc: "this is desciption"
+    },   
+    { 
+      name: "Metro Collection", 
+      image: metroCollection2Img,
+      desc: "this is desciption"
+    },
+      { 
+        name: "Textile Metro Collection", 
+        image: textTileMetroCollectionImg,
+      desc: "this is desciption"
+    },
+    { 
+      name: "Textile Metro Networking", 
+      image: textTileMetroNetworkImg,
+      desc: "this is desciption"
+    },  { 
+      name: "Typical Textile", 
+      image: typicalTextileCollectionImg,
+      desc: "Typical "
+    },
   ];
 
   return (
@@ -57,7 +83,7 @@ export const Models = () => {
                 </div>
                 <div className='w-full'>
                     <div className='w-full text-left'>
-                        <ImagesCarousel imageList={images} />
+                        <ImagesCarousel imageList={collectionNetwork} />
                     </div>
                 </div>
             </div>
@@ -70,7 +96,7 @@ export const Models = () => {
                 </div>
                 <div className='w-full'>
                     <div className='w-full text-left'>
-                        <ImagesCarousel imageList={images} />
+                        <ImagesCarousel imageList={collectionNetwork} />
                     </div>
                 </div>
             </div>
@@ -83,7 +109,7 @@ export const Models = () => {
                 </div>
                 <div className='w-full'>
                     <div className='w-full text-left'>
-                        <ImagesCarousel imageList={images} />
+                        <ImagesCarousel imageList={collectionNetwork} />
                     </div>
                 </div>
             </div>
@@ -97,7 +123,7 @@ export const Models = () => {
                 </div>
                 <div className='w-full'>
                     <div className='w-full text-left'>
-                        <ImagesCarousel imageList={images} />
+                        <ImagesCarousel imageList={collectionNetwork} />
                     </div>
                 </div>
             </div>

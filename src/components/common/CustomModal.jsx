@@ -9,9 +9,11 @@ const CustomModal = ({ visible, onHide, children }) => {
         width: '100%',
         height: '100%',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        zIndex: 9999,
+        zIndex: 60,
         display: visible ? 'block' : 'none',
+        pointerEvents: 'none', // Prevent the modal from capturing click events
     };
+    
 
     const backdropStyle = {
         position: 'fixed',
@@ -20,7 +22,7 @@ const CustomModal = ({ visible, onHide, children }) => {
         width: '100%',
         height: '100%',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        zIndex: 9998,
+        zIndex: 59,
         display: visible ? 'block' : 'none'
     };
 

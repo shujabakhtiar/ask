@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { Carousel } from 'primereact/carousel';
 import CustomModal from '../CustomModal';
 import { WideImage } from '../WideImage';
-import { Button } from 'primereact/button';
 
 export const ImagesCarousel = ({ imageList }) => {
     const [visible, setVisible] = useState(false);
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedImage, setSelectedImage] = useState({});
 
     const responsiveOptions = [
         {
@@ -33,7 +32,7 @@ export const ImagesCarousel = ({ imageList }) => {
 
     const projectTemplate = (project) => {
         return (
-            <div onClick={() => openDialog(project.image)}>
+            <div className='flex items-center' onClick={() => openDialog(project)}>
                 <WideImage image={project.image} name={project.image} />
             </div>
         );
@@ -46,11 +45,10 @@ export const ImagesCarousel = ({ imageList }) => {
 
     const onHide = () => {
         setVisible(false);
-        setSelectedImage(null);
     };
 
     return (
-        <div className="card">
+        <div className="flex items-center">
             <Carousel 
                 value={imageList} 
                 numVisible={3} 
@@ -59,11 +57,25 @@ export const ImagesCarousel = ({ imageList }) => {
                 itemTemplate={projectTemplate} 
                 circular
             />
-            <CustomModal visible={visible} onHide={onHide}>
-                <img src={selectedImage} alt="Selected" style={{ width: '100%' }} />
-                <div className="p-d-flex p-jc-end">
-                    <Button label="Close" icon="pi pi-times" onClick={onHide} />
+          
+            <CustomModal visible={visible} onHide={onHide} >
+                <div className='w-full flex flex-col'>
+                    <div className='flex justify-center'>
+                         <img src={selectedImage.image} alt="Selected" className='w-full h-3/5 rounded-tl-lg rounded-tr-lg'/>
+                     </div>
+                    <div className='flex flex-col py-3 px-4'>
+                        <p className='text-left text-xl font-bold'>
+                            {selectedImage.name}
+                        </p>
+                        <p className='text-left'>
+                            {selectedImage.desc}
+                         </p>
+                     <div className="flex justify-end">
+                      <button onClick={onHide} className='hollow-button'>Close</button>
+                     </div>
+                    </div>
                 </div>
+                
             </CustomModal>
         </div>
     );

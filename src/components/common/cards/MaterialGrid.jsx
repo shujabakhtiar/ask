@@ -26,7 +26,7 @@ const photos = [
         desc:"Made from a blend of clay and shredded textile waste in a 1:2 ratio, this versatile material can be molded into various shapes and is suitable for roof cladding, floor tiles, and wall cladding."
     },
     { 
-        name: "CONCRETE + TEXTILE", 
+        name: "Wet Clay", 
         image: claryWetImg,
         desc : "Made from a blend of clay and shredded textile waste in a 1:2 ratio, this versatile material can be molded into various shapes and is suitable for roof cladding, floor tiles, and wall cladding.        "
     },
@@ -37,33 +37,33 @@ const photos = [
         desc: "This insulating material combines hemp, lime, and textile waste in a 1:1:2 ratio. It is ideal for use in insulating walls and wall cladding, providing both thermal efficiency and sustainability."
     },
     { 
-        name: "CONCRETE + TEXTILE", 
+        name: "Lime + TEXTILE", 
         image: limeTextile ,
         desc: "With a 1:2 ratio of lime to textile waste, this material is effective for wall cladding, offering a durable and eco-friendly alternative to conventional cladding materials."
 
     },
     { 
-        name: "CONCRETE + TEXTILE", 
+        name: "Mycellium", 
         image: mycellum, 
         desc:"This innovative material is made from mycelium, coffee grounds, wheat grains, and textile waste in a 1:2:2:4 ratio. It has excellent insulation properties, making it suitable for use in building insulation." 
     },
     { 
-        name: "CONCRETE + TEXTILE", 
+        name: "PLASTER + TEXTILE", 
         image: plasterImg,
         desc: "Combining plaster and textile waste in a 1:2 ratio, this material can be applied directly to walls and hardens quickly, providing a durable and smooth finish."
     },
     { 
-        name: "CONCRETE + TEXTILE", 
+        name: "RESIN + TEXTILE", 
         image: resinTextileImg, 
         desc :"With a 1:2 ratio of resin to textile waste, this material is exceptionally hard and suitable for toughened applications, including durable surfaces and structural components."
      },
     { 
-        name: "CONCRETE + TEXTILE", 
+        name: "RESIN + TEXTILE", 
         image: resinTileImg,
         desc : "With a 1:2 ratio of resin to textile waste, this material is exceptionally hard and suitable for toughened applications, including durable surfaces and structural components."
     },
     { 
-        name: "CONCRETE + TEXTILE", 
+        name: "SAND + lIME + TEXTILE", 
         image: sandLimeImg,
         desc: "This material, made from sand, lime, and textile waste in a 1:1:2 ratio, is suitable for wall construction, offering strength and sustainability." 
     },
@@ -77,11 +77,11 @@ const photos = [
         image: constarch1Img, 
         desc: "Mixing shredded textile with corn starch in a 2:1 ratio, this organic binder creates a moldable material that can be used for both internal and external applications, depending on the properties of the fabric." 
     },
-    {   name: "CONCRETE + TEXTILE", 
+    {   name: "CORNSTARCH + TEXTILE", 
         image: constarchTileImg,
         desc: "Mixing shredded textile with corn starch in a 2:1 ratio, this organic binder creates a moldable material that can be used for both internal and external applications, depending on the properties of the fabric."  
     },    
-    {   name: "CONCRETE + TEXTILE", 
+    {   name: "CORNSTARCH + TEXTILE", 
         image: constarch21Img,
         desc: "Mixing shredded textile with corn starch in a 2:1 ratio, this organic binder creates a moldable material that can be used for both internal and external applications, depending on the properties of the fabric."  
     },
@@ -99,6 +99,7 @@ const PhotoGrid = () => {
     };
 
     const onHide = () => {
+        console.log("heyy")
         setVisible(false);
     };
 
@@ -108,11 +109,11 @@ const PhotoGrid = () => {
                 {photos.map((photo, index) => (
                     <div key={index} className="relative overflow-visible rounded-lg shadow-lg w-full h-full cursor-pointer flex flex-col justify-center items-center hover:shadow-xl" onClick={() => openModal(photo)}>
                         <div className="absolute inset-0"></div>
-                        <MaterialCard name="hi" image={photo.image} />
+                        <MaterialCard name={photo.name} image={photo.image} />
                     </div>
                 ))}
             </div>
-            <CustomModal visible={visible} onHide={onHide}>
+            <CustomModal visible={visible} onHide={onHide} >
                 <div className='w-full flex flex-col'>
                     <div className='flex justify-center'>
                          <img src={selectedImage.image} alt="Selected" className='w-full h-3/5 rounded-tl-lg rounded-tr-lg'/>
@@ -136,8 +137,8 @@ const PhotoGrid = () => {
 };
 
 const MaterialImagesGrid = () => (
-    <div className='flex flex-col justify-center items-center'>
-        <h1 className="text-4xl font-bold text-center my-8">Photo Gallery</h1>
+    <div className='flex flex-col justify-center'>
+        <h1 className="text-4xl font-bold text-left m-8">Materials and their compositions</h1>
         <PhotoGrid />
     </div>
 );

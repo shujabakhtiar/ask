@@ -1,6 +1,6 @@
 // constants.js
 export const homePageTexts = {
-    videoText: 'howdy doody',
+    videoText: 'ReWeave: Textile Waste to Architectural Marvels',
     quotes:{
         quote1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         quote2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"

@@ -4,6 +4,8 @@ import { ModelImages } from '../components/common/carousels/ModelImages';
 import { MaterialImages } from '../components/common/carousels/MaterialImages';
 import { Link } from 'react-router-dom';
 import useIntersectionObserver from '../assets/helper/useIntersectionObserver'; // Adjust the import path accordingly
+import video from "../assets/video.mp4"
+import videomobile from "../assets/videomobile.mp4"
 
 export const Home = () => {
     const [modelsRef, modelsInView] = useIntersectionObserver({
@@ -27,9 +29,23 @@ export const Home = () => {
 
     return (
         <>
-            <div className="full-container flex justify-center items-center relative overflow-hidden">
-                <div className="sticky-text h-20">{homePageTexts.videoText}</div>
+           <div className="full-container relative overflow-hidden">
+            <video className="hidden md:block w-full relative overflow-hidden opacity-70" autoPlay muted loop>
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <video className="md:hidden  h-full w-full relative overflow-hidden opacity-70" autoPlay muted loop>
+                <source src={videomobile} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div> {/* Semi-transparent black layer */}
+
+            <div className="left-10 md:left-20 absolute h-20 text-4xl font-bold text-white text-left">
+                <span className='text-5xl text-left'>Reweave</span> <br />
+                <span className='text-2xl'>Transforming Textile Waste into Architectural Marvels</span>
             </div>
+        </div>
+
 
             <div
                 ref={quoteA} 
