@@ -19,8 +19,7 @@ import chairImg from "../assets/images/MODELS/FURNITURES/Textile waste chair 01.
 import chair2Img from "../assets/images/MODELS/FURNITURES/Textile waste chair 02.jpg"
 import coffeeTableImg from "../assets/images/MODELS/FURNITURES/textile waste coffee table.jpg"
 import stoolImg from "../assets/images/MODELS/FURNITURES/Textile waste stool.jpg"
-import clothChair from "../assets/images/MODELS/FURNITURES/Recycled textile chair.jpg"
-import modelImage from "../assets/images/MODELS/COLLECTION NETWORK/metro-collection-1.jpg"
+import clothChair from "../assets/images/MODELS/FURNITURES/recycleTextileChair.jpg"
 
 import buildingSectionImg from "../assets/images/MODELS/New folder/Building Section.jpg"
 import partitionWallpanelImg from "../assets/images/MODELS/New folder/Partition wall panel .jpg"
@@ -144,17 +143,6 @@ export const Models = () => {
   const Section = ({ title, text, imageList }) => (
     <>
         <div className="border-t border-gray-300 my-8"></div>
-        <div className="flex justify-start flex-col items-start py-4 transition-opacity duration-1000">
-        <div className="container flex flex-col font-bold items-start">
-            <h3 className="text-black text-4xl text-left">{title}</h3>
-            <p className="text-black text-justify text-l">{text}</p>
-        </div>
-        <div className="w-full">
-            <div className="w-full text-left">
-                <ImagesCarousel imageList={imageList} />
-            </div>
-        </div>
-    </div>
 
     <div 
                     className={`flex justify-start flex-col items-start py-4 mt-4 transition-opacity duration-1000`}
