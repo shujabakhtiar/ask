@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { ModelImages } from '../components/common/carousels/ModelImages';
+
 import { ImagesCarousel } from '../components/common/carousels/ImagesCarousel';
 import metroCollectionImg from "../assets/images/MODELS/COLLECTION NETWORK/metro-collection-1.jpg"
 import metroCollection2Img from "../assets/images/MODELS/COLLECTION NETWORK/metro-collection-2.jpg"
@@ -134,7 +136,8 @@ export const Models = () => {
   ]
   const Section = ({ title, text, imageList }) => (
     <>
-        <div className="border-t border-gray-300 my-8"></div>
+        <div className="border-t border-gray-300 my-8">
+        </div>
 
            <div 
                     className={`flex justify-start flex-col items-start py-4 mt-4 transition-opacity duration-1000`}
@@ -145,7 +148,9 @@ export const Models = () => {
         </div>
                 <div className='w-full'>
                     <div className='w-full text-left'>
-                    <ImagesCarousel imageList={imageList} />
+                   {/** <ImagesCarousel imageList={imageList} />*/} 
+                   <ModelImages />
+
                     </div>
                 </div>
             </div>
@@ -189,13 +194,15 @@ export const Models = () => {
           </div>
         </div>
       </div>
+     
       <Section
             title="Collection Network"
             text="The collection network is an innovative system designed to streamline the gathering of textile waste in Newcastle upon Tyne, ensuring efficient transportation to our recycling center. This network includes strategically placed collection boxes across the city, making it convenient for residents to participate in sustainable practices. By integrating these collection points into everyday locations such as metro stations, student accommodations, retail shops, and bus stations, we aim to create a seamless and engaging experience for the community, promoting awareness and active participation in textile recycling."
             imageList={collectionNetwork}
         />
 
-        <Section
+       (/**
+       <Section
             title="Creative"
             text="The creative section showcases our innovative approach to repurposing textile waste into unique, functional, and aesthetically pleasing items. Through these creative projects, we demonstrate the potential of discarded textiles to be transformed into decor and utility pieces that not only add value to our living spaces but also promote sustainability and awareness about textile waste."
              imageList={creative}
@@ -211,6 +218,7 @@ export const Models = () => {
             text="The Architectural Innovations section showcases how our research and material experiments extend beyond small-scale applications, demonstrating their potential in real-world architectural contexts. By integrating textile waste into building elements, we highlight the feasibility and aesthetic appeal of sustainable materials in construction and interior design.            "
             imageList={architectureInnovations}
         />
+        */) 
 
     </>
   )
