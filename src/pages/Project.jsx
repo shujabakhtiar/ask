@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {homePageTexts} from "../assets/consts/content"
 import { StatusCard } from '../components/common/cards/StatusCard'
-import { FeaturedProjectsList } from '../components/common/cards/FeaturedProjectsList'
 
 export const Project = () => {
   const [showDetails, setShowDetails] = useState(false);
@@ -44,13 +43,7 @@ const toggleDetails = () => {
             </div>
           
           
-            <div className='flex justify-start flex flex-col'>
-        <div className='w-full'>
-        <div className='container w-full text-left'>
-            <FeaturedProjectsList/>
-        </div>
-        </div>
-    </div>
+         
         </div>
     </div>
     </>

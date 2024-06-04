@@ -101,6 +101,31 @@
 .text-gray {
   color:#9e9e9e
 }
+.hollow-button {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 4px; /* Adding border radius */
+  color: black;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  outline: none; /* Remove default focus outline */
+}
+
+.hollow-button:hover,
+.hollow-button:focus {
+  color: blue;
+  border-color: blue;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add elevation effect */
+}
+
+.hollow-button:active {
+  box-shadow: none; /* Remove shadow on click */
+}
+
+
 .quote{
   max-width: 35vw;
   text-align: left;
