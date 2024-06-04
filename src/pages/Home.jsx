@@ -64,7 +64,7 @@ export const Home = () => {
                 className={`full-container bg-semi-light flex justify-center items-center transition-opacity duration-1000 ${quoteBInView ? 'opacity-100' : 'opacity-0'}`}>
                 <div className='container md:h-5/6 flex flex-col items-center md:flex md:flex-row md:justify-around'>
                     <div className=''>
-                        <img src={smallScaleImage} className='home-img'/>
+                        <img src={smallScaleImage} alt="ss" className='home-img'/>
                     </div>
 
                     <div className='md:text-3xl text-justify md:w-2/5 flex justify-center'>
@@ -80,7 +80,7 @@ export const Home = () => {
                     <div className='md:text-3xl text-justify md:w-2/5 flex justify-center'>
                         {homePageTexts.quotes.mediumScale}
                     </div>
-                    <img src={mediumScaleImg}  className='home-img'/>
+                    <img src={mediumScaleImg} alt="ms" className='home-img'/>
 
                 </div>
             </div>
@@ -89,7 +89,7 @@ export const Home = () => {
             <div                 
                 className={`full-container bg-semi-light flex justify-center items-center transition-opacity duration-1000 `}>
                 <div className='container md:h-5/6 flex flex-col items-center md:flex md:flex-row md:justify-around'>
-                <img src={largeScaleImg}  className='home-img'/>
+                <img src={largeScaleImg}  alt="ls" className='home-img'/>
 
 
                     <div className='md:text-3xl text-justify md:w-2/5 flex justify-center'>
