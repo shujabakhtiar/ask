@@ -1,20 +1,10 @@
 import React, { useState } from 'react';
-import {homePageTexts} from "../assets/consts/content"
-import { StatusCard } from '../components/common/cards/StatusCard'
 import MaterialImagesGrid from '../components/common/cards/MaterialGrid';
-import materialImages from "../assets/images/home/smallScale.jpg"
 import videoDesktop from "../assets/materialDesktop.mp4"
 import videoMobile from "../assets/materialMobile.mp4"
 
 export const Materials = () => {
   const [showDetails, setShowDetails] = useState(false);
-
-  const infoItems = [
-    { title: 'Client', info: 'Elleric' },
-    { title: 'Location', info: 'London, WC2B' },
-    { title: 'Status', info: 'Current' }
-];
-
 const toggleDetails = () => {
   setShowDetails(prevShowDetails => !prevShowDetails);
 };

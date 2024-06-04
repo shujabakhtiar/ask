@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Card } from 'primereact/card';
-import { Button } from 'primereact/button';
 
 const MaterialCard = ({ name, image }) => {
-    const footer = (
-        <button className="hollow-button">View</button>
-    );
+   
     const header = (
         <img src={image} alt={name} className="w-full h-48 object-cover rounded-t-lg" />
     );

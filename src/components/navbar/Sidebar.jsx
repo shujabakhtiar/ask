@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import "./Sidebar.css";
-import { Link,useNavigate  } from 'react-router-dom';
+import { useNavigate  } from 'react-router-dom';
 
 const Sidebar = ({ isOpen, onClose }) => {
   const navigate = useNavigate();

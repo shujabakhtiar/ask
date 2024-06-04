@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import { homePageTexts } from "../assets/consts/content";
-import { StatusCard } from '../components/common/cards/StatusCard';
-import { Link } from 'react-router-dom';
 import { ImagesCarousel } from '../components/common/carousels/ImagesCarousel';
-import img from "../assets/images/MODELS/COLLECTION NETWORK/metro-collection-1.jpg";
 import metroCollectionImg from "../assets/images/MODELS/COLLECTION NETWORK/metro-collection-1.jpg"
 import metroCollection2Img from "../assets/images/MODELS/COLLECTION NETWORK/metro-collection-2.jpg"
 import textTileMetroCollectionImg from "../assets/images/MODELS/COLLECTION NETWORK/textile-metro-collection-network.jpg"
@@ -30,11 +26,7 @@ import videoMobile from "../assets/modelsmobile.mp4"
 export const Models = () => {
   const [showDetails, setShowDetails] = useState(false);
 
-  const infoItems = [
-    { title: 'Client', info: 'Elleric' },
-    { title: 'Location', info: 'London, WC2B' },
-    { title: 'Status', info: 'Current' }
-  ];
+
 
   const toggleDetails = () => {
     setShowDetails(prevShowDetails => !prevShowDetails);
@@ -144,7 +136,7 @@ export const Models = () => {
     <>
         <div className="border-t border-gray-300 my-8"></div>
 
-    <div 
+           <div 
                     className={`flex justify-start flex-col items-start py-4 mt-4 transition-opacity duration-1000`}
             >
                 <div className="container flex flex-col font-bold items-start">

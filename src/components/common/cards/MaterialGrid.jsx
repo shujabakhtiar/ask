@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button } from 'primereact/button';
 import MaterialCard from './MaterialCard'; // Import the MaterialCard component
 import CustomModal from '../CustomModal'; // Import the CustomModal component
 import clayDryImg from "../../../assets/images/materials/CLAY+DRY TEXTILE TILE.jpg";
@@ -91,10 +90,8 @@ const photos = [
 const PhotoGrid = () => {
     const [visible, setVisible] = useState(false);
     const [selectedImage, setSelectedImage] = useState({});
-    const [desc,setDescription] = useState("")
     const openModal = (photo) => {
         setSelectedImage(photo);
-        setDescription(photo.desc)
         setVisible(true);
     };
 
