@@ -8,8 +8,8 @@ import typicalTextileCollectionImg from "../assets/images/MODELS/COLLECTION NETW
 
 import denimImg from "../assets/images/MODELS/CREATIVE/denim.jpg"
 import fabricpanelImg from "../assets/images/MODELS/CREATIVE/fabric-panel-board.jpg"
-import recycledFramesImg from "../assets/images/MODELS/CREATIVE/Recycled frames.jpg"
-import textTileLamp from "../assets/images/MODELS/CREATIVE/Textile Lamp and Textile coaster.jpg"
+import recycledFramesImg from "../assets/images/MODELS/CREATIVE/Recycledframes.jpg"
+import textTileLamp from "../assets/images/MODELS/CREATIVE/TextileLampandTextilecoaster.jpg"
 
 import chairImg from "../assets/images/MODELS/FURNITURES/Textile waste chair 01.jpg"
 import chair2Img from "../assets/images/MODELS/FURNITURES/Textile waste chair 02.jpg"
