@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom';
 import useIntersectionObserver from '../assets/helper/useIntersectionObserver'; // Adjust the import path accordingly
 import video from "../assets/video.mp4"
 import videomobile from "../assets/videomobile.mp4"
-
+import smallScaleImage from "../assets/images/home/smallScale.jpg"
+import mediumScaleImg from "../assets/images/MODELS/New folder/Building Section.jpg"
+import largeScaleImg from "../assets/images/MODELS/COLLECTION NETWORK/textile-metro-collection-network.jpg"
 export const Home = () => {
     const [modelsRef, modelsInView] = useIntersectionObserver({
         threshold: 0.3,
@@ -50,12 +52,9 @@ export const Home = () => {
             <div
                 ref={quoteA} 
                 className={`full-container flex justify-center items-center transition-opacity duration-1000 ${quoteAInView ? 'opacity-100' : 'opacity-0'}`}>
-                <div className='container md:h-5/6 flex-col flex md:relative md:flex-row'>
-                    <div className='md:absolute md:top-0 md:left-0 font-bold md:text-4xl quote'>
+                <div className='container flex md:h-5/6 flex-col md:relative md:flex-row'>
+                    <div className='md:absolute md:top-0 md:left-0 font-bold md:text-3xl text-justify md:w-2/5'>
                         {homePageTexts.quotes.quote1}
-                    </div>
-                    <div className='md:absolute md:bottom-0 md:right-0'>
-                        Image here
                     </div>
                 </div>
             </div>
@@ -65,11 +64,36 @@ export const Home = () => {
                 className={`full-container bg-semi-light flex justify-center items-center transition-opacity duration-1000 ${quoteBInView ? 'opacity-100' : 'opacity-0'}`}>
                 <div className='container md:h-5/6 flex flex-col items-center md:flex md:flex-row md:justify-around'>
                     <div className=''>
-                        Image here
+                        <img src={smallScaleImage} className='home-img'/>
                     </div>
 
-                    <div className='md:text-4xl quote'>
-                        {homePageTexts.quotes.quote2}
+                    <div className='md:text-3xl text-justify md:w-2/5 flex justify-center'>
+                        {homePageTexts.quotes.smallScale}
+                    </div>
+                </div>
+            </div>
+
+            
+            <div                 
+                className={`full-container flex justify-center items-center transition-opacity duration-1000`}>
+                <div className='container md:h-5/6 flex flex-col items-center md:flex md:flex-row md:justify-around'>
+                    <div className='md:text-3xl text-justify md:w-2/5 flex justify-center'>
+                        {homePageTexts.quotes.mediumScale}
+                    </div>
+                    <img src={mediumScaleImg}  className='home-img'/>
+
+                </div>
+            </div>
+
+            
+            <div                 
+                className={`full-container bg-semi-light flex justify-center items-center transition-opacity duration-1000 `}>
+                <div className='container md:h-5/6 flex flex-col items-center md:flex md:flex-row md:justify-around'>
+                <img src={largeScaleImg}  className='home-img'/>
+
+
+                    <div className='md:text-3xl text-justify md:w-2/5 flex justify-center'>
+                        {homePageTexts.quotes.largeScale}
                     </div>
                 </div>
             </div>

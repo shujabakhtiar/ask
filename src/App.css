@@ -88,6 +88,9 @@
   background-color: #f2e0cf;
 
 }
+.home-img{
+  max-width: 500px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -128,12 +131,6 @@
   box-shadow: none; /* Remove shadow on click */
 }
 
-@media only screen and (max-width: 767px) {
-  .video-background {
-      width: 100%;
-      height: auto;
-  }
-}
 .quote{
   max-width: 35vw;
   text-align: left;
@@ -147,6 +144,9 @@
 .App-link {
   color: #61dafb;
 }
+.max-h-img{
+  max-height: 500px;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -157,3 +157,13 @@
   }
 }
 
+
+@media only screen and (max-width: 767px) {
+  .quote{
+    width:100vw !important;
+  }
+  .video-background {
+      width: 100%;
+      height: auto;
+  }
+}
